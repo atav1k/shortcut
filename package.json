@@ -4,10 +4,14 @@
   "version": "1.0.0",
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx",
+    "build": "mdx-deck build readme.md && npm run cp-static",
+    "cp-static": "cp-cli src/ dist/src/",
     "help": "mdx-deck"
   },
   "devDependencies": {
-    "mdx-deck": "^2.0.0-11"
+    "mdx-deck": "^2.0.0-11",
+    "react": "^16.6.3",
+    "react-scripts": "2.1.1",
+    "cp-cli": "^1.1.2"
   }
 }
