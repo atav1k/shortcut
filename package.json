@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build readme.md && npm run cp-static",
+    "build": "mdx-deck build deck.mdx && npm run cp-static",
     "cp-static": "cp-cli src/ dist/src/",
     "help": "mdx-deck"
   },
